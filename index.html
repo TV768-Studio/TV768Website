@@ -13,7 +13,8 @@
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            overflow: hidden;
+            /* 防止页面滚动 */
         }
 
         .logo {
@@ -34,18 +35,22 @@
             transform: translate(-50%, -50%);
             width: 100%;
             z-index: 100;
+            margin: 0;
+            /* 移除默认的margin */
         }
 
         p {
-            margin-top: 20px;
             color: #666;
             text-align: center;
             position: absolute;
-            top: 60%;
+            top: 65%;
+            /* 调整位置以避免与h1重叠 */
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
             z-index: 100;
+            margin: 0;
+            /* 移除默认的margin */
         }
 
         .bg-image {
@@ -55,6 +60,7 @@
             width: 100%;
             height: 100%;
             background-image: url('index.jpg');
+            /* 确保URL正确 */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -66,9 +72,9 @@
 <body>
 
     <div class="bg-image"></div>
-    <img src="TV768.png" alt="TV768Logo" class="logo">
+    <img src="TV768.png" alt="TV768 Logo" class="logo">
     <h1>精彩的768 让生活添色彩</h1>
-    <p>TV768网站正在建设中 更多消息请关注TV768官方B站账号@SevenSixEight_</p>
+    <p>TV768网站正在建设中 更多消息请关注TV768官方B站账号@SevenSixEight_ </p>
 
 </body>
 
