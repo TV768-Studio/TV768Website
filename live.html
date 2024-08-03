@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>TV768 LiveStreaming</title>
+    <link rel="stylesheet"
+        href="https://g.alicdn.com/apsara-media-box/imp-web-player/2.25.1/skins/default/aliplayer-min.css" />
+    <script type="text/javascript" charset="utf-8"
+        src="https://g.alicdn.com/apsara-media-box/imp-web-player/2.25.1/aliplayer-min.js"></script>
+</head>
+
+<body>
+    <div class="prism-player" id="player-con"></div>
+    <script>
+        var player = new Aliplayer({
+            "id": "player-con",
+            "source": "//vdsbkup-tcloud-pull.hydun.com/live/SevenSixEight.m3u8",
+            "width": "100%",
+            "height": "500px",
+            "autoplay": true,
+            "isLive": true,
+            "cover": "//ossk.cc/file/b538ff29153bf3328be2a.jpg",
+            "rePlay": false,
+            "videoHeight": "1080",
+            "playsinline": true,
+            "preload": true,
+            "autoPlayDelay": "",
+            "controlBarVisibility": "hover",
+            "videoWidth": "1920",
+            "useH5Prism": true
+        }, function (player) {
+            console.log("The player is created");
+        }
+        );
+    </script>
+</body>
+由VDSLiveStream提供服务 & Powered By VDSLiveStream
+b站直播请前往6674145直播间收看
